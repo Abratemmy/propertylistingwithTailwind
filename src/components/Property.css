@@ -1,0 +1,15 @@
+.bgImage{
+    background-image: linear-gradient(to bottom, rgba(64, 65, 70, 0.699), rgba(36, 26, 33, 0.658)),url('../Assets/bghouse.jpeg');
+    background-position: center center;
+    background-size: cover;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.slick-slider .slick-slide {
+    padding: 0 7px;
+  }

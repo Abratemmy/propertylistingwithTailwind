@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+:root{
+  --textColor:#504e4e;
+  --purpleColor: #BA68C8;
+  --mainBlack: #1f2027;
+  --logoText:'Updock', cursive;
+  --logo2Text: 'Neonderthaw', cursive;
+  --headingFamily: 'Raleway', sans-serif;
+  --textFamily: 'Lato', sans-serif;
+
+
+  --secondaryColor: #e0e4f0;
+  --primaryColor: #2F3D7E;
+  --text2Color: #646262;
+  --accentColor: #ED7D3A;
+
+  --backgroundColor: #0b081b;
+  --backgroundColor2: #0c0c20;
+  --pinkColor: #ff2600;
+  --fadePink: #ff260080;
+}
+.custom-select {
+  min-width: 350px;
 }
 
-.App-logo {
-  height: 40vmin;
+.custom-select select {
+  appearance: none;
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+.custom-select::before,
+.custom-select::after {
+  --size: 0.3rem;
+  position: absolute;
+  content: "";
+  right: 1rem;
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-select::before {
+  border-left: 1 solid transparent;
+  border-right: 1 solid transparent;
+  border-bottom: 1 solid yellow;
+  top: 40%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-select::after {
+  border-left: 1 solid transparent;
+  border-right: 1 solid transparent;
+  border-top: 1 solid black;
+  top: 55%;
 }
